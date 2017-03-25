@@ -1,10 +1,12 @@
 # NodeTCPServer
 
 To run:
-
-> npm install
-> npm run bs
+```
+npm install 
+npm run bs
+```
 
 Test this by using telnet:
-
-> telnet localhost 8124
+```
+telnet localhost 8124
+```
