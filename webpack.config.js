@@ -47,15 +47,6 @@ module.exports = {
 
   module: {
     loaders: [
-      { 
-        test: /\.scss$/, 
-        loader: 'style!css!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded' 
-      },
-      { 
-        exclude: /(node_modules|bower_components)/,
-        text: /\.js$/, 
-        loader: 'babel-loader',
-      },
       { test: /\.jsx?$/, 
         loaders: ['babel'], 
         exclude: /node_modules/ 
