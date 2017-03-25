@@ -16,6 +16,7 @@ server.on('error', (err) => {
   throw err;
 });
 
-server.listen(8124, () => {
-  console.log('server bound');
+// grab a random port.
+server.listen(() => {
+  console.log('opened server on', server.address());
 });
