@@ -10,17 +10,22 @@
   },
   "homepage": "https://github.com/kacobjeith/NodeTCPServer",
   "engines": {
-    "node": "7.7.4"
+    "node": "0.12.x"
   },
   "scripts": {
     "build": "webpack",
     "start": "./node_modules/.bin/babel-node src/index.js",
     "bs": "npm run build && npm run start"
   },
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.0",
+    "babel-loader": "^6.4.1",
     "babel-preset-env": "^1.2.2",
+    "json-loader": "^0.5.4",
     "webpack": "^1.14.0"
   },
   "repository": {

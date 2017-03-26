@@ -1,4 +1,5 @@
 import net from 'net'
+import express from 'express'
 
 const server = net.createServer((sock) => {
   // 'connection' listener
@@ -16,7 +17,7 @@ server.on('error', (err) => {
   throw err;
 });
 
-// grab a random port.
-server.listen(() => {
+
+server.listen(5000, () => {
   console.log('opened server on', server.address());
 });

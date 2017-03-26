@@ -23,7 +23,8 @@ module.exports = {
 
   node: {
     dns: 'mock',
-    net: 'mock'
+    net: 'mock',
+    fs: 'empty'
   },
 
   output: {
@@ -50,6 +51,9 @@ module.exports = {
       { test: /\.jsx?$/, 
         loaders: ['babel'], 
         exclude: /node_modules/ 
+      },
+      { test: /\.json?$/, 
+        loaders: ['json']
       }
     ],
 
